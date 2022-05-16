@@ -1,7 +1,8 @@
 
 #include <iostream>
 #include <string>
-#include <cmath>
+//#include <cmath>
+//may include calcualtions 
 
 using namespace std;
 int main() {
@@ -22,17 +23,16 @@ int main() {
 
   do{
     
-    // to do: nested loop
-    
   cout << "GAME HERE" << "\n";
   cout << "TURN:  "<< turnNumber << "\n";
   cout << "TURN:  "<< healthPoints << "\n";
+    
+    
   
    for (int j = 0; j < alphabetString.length(); j++){
     getline (cin, userInputs[j]);
     break;
    }
-  
   
   turnNumber++;
   healthPoints -= 9;
