@@ -20,7 +20,10 @@ int main() {
   cout << "last letter of array is  " << alphabetArray[25] << "\n";
 
   do{
-   cout << "GAME HERE" << "\n";
+    
+    // to do: nested loop
+    
+  cout << "GAME HERE" << "\n";
   cout << "TURN:  "<< turnNumber << "\n";
   cout << "TURN:  "<< healthPoints << "\n";
   turnNumber++;
