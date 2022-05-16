@@ -2,7 +2,6 @@
 #include <string>
 #include <cmath>
 
-
 using namespace std;
 int main() {
 
@@ -15,17 +14,13 @@ int main() {
   string userInputs[alphabetSize];
   int turnNumber = 0;
   int healthPoints = 99;
-  
-  
+   
   cout << alphabetSize << "\n";
   cout << "first letter of array is  " << alphabetArray[0] << "\n";
   cout << "last letter of array is  " << alphabetArray[25] << "\n";
-  cout << "TURN:  "<< turnNumber << "\n";
-  cout << "TURN:  "<< healthPoints << "\n";
-  
+
   do{
-        
-  cout << "game" << "\n";
+   cout << "GAME HERE" << "\n";
   cout << "TURN:  "<< turnNumber << "\n";
   cout << "TURN:  "<< healthPoints << "\n";
   turnNumber++;
