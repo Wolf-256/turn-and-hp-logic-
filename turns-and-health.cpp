@@ -1,3 +1,4 @@
+
 #include <iostream>
 #include <string>
 #include <cmath>
@@ -26,6 +27,13 @@ int main() {
   cout << "GAME HERE" << "\n";
   cout << "TURN:  "<< turnNumber << "\n";
   cout << "TURN:  "<< healthPoints << "\n";
+  
+   for (int j = 0; j < alphabetString.length(); j++){
+    getline (cin, userInputs[j]);
+    break;
+   }
+  
+  
   turnNumber++;
   healthPoints -= 9;
   }while (healthPoints>0);
