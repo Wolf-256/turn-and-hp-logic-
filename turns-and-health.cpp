@@ -13,7 +13,8 @@ int main() {
   int alphabetSize = alphabetString.length();
   string userInputs[alphabetSize];
   int turnNumber = 0;
-  int healthPoints = 90;
+  int healthPoints = 99;
+  //default value for HP (healthPoints)
    
   cout << alphabetSize << "\n";
   cout << "first letter of array is  " << alphabetArray[0] << "\n";
@@ -31,14 +32,20 @@ int main() {
     getline (cin, userInputs[j]);
     
     if (userInputs[j] == "") {
+      turnNumber++;
           cout << "NEXT" << "\n";
-  // block of code to be executed if condition1 is true
+  // block of code to be executed if user enters a blank inpur or lack of input
+  //adds turn, but does not damage player if no wrong inout is entered 
 } else if (userInputs[j]==alphabetArray[0]) {
     break;
-  // block of code to be executed if the condition1 is false and condition2 is true
+  // block of code to be executed if the condition is the values are true / fit answer
+      //hangman style word game logic 
+        //adds turn
 } else {
     break;
-  // block of code to be executed if the condition1 is false and condition2 is false
+  // block of code to be executed if the ccondition is the values are NOT true 
+      //damage palyer
+       //adds turn
 }
     
     
