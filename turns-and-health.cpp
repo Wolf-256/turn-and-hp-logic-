@@ -37,15 +37,23 @@ int main() {
   // block of code to be executed if user enters a blank inpur or lack of input
   //adds turn, but does not damage player if no wrong inout is entered 
 } else if (userInputs[j]==alphabetArray[0]) {
-    break;
+    //break;
+    cout << alphabetArray[0]<< "!!!!" << "\n";
+    //test condiontion 
+    
+    
   // block of code to be executed if the condition is the values are true / fit answer
       //hangman style word game logic 
         //adds turn
+        turnNumber++;
+        break;
 } else {
-    break;
+    //break;
   // block of code to be executed if the ccondition is the values are NOT true 
       //damage palyer
        //adds turn
+       turnNumber++;
+       break;
 }
     
     
