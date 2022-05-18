@@ -1,4 +1,3 @@
-
 #include <iostream>
 #include <string>
 #include <cmath>
@@ -14,7 +13,7 @@ int main() {
   int alphabetSize = alphabetString.length();
   string userInputs[alphabetSize];
   int turnNumber = 0;
-  int healthPoints = 99;
+  int healthPoints = 90;
    
   cout << alphabetSize << "\n";
   cout << "first letter of array is  " << alphabetArray[0] << "\n";
@@ -26,7 +25,7 @@ int main() {
     
   cout << "GAME HERE" << "\n";
   cout << "TURN:  "<< turnNumber << "\n";
-  cout << "TURN:  "<< healthPoints << "\n";
+  cout << "HP:  "<< healthPoints << "\n";
   
    for (int j = 0; j < alphabetString.length(); j++){
     getline (cin, userInputs[j]);
@@ -50,6 +49,8 @@ int main() {
   turnNumber++;
   healthPoints -= 9;
   }while (healthPoints>0);
+  cout <<  "\n";cout <<  "\n"; cout <<  "\n";
+  cout << "GAME OVER!" << "\n";
   
     return 0;
 }
