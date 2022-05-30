@@ -7,10 +7,13 @@ int main() {
 
   string alphabetString = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
   string alphabetArray[26];
-  for (int i = 0; i < alphabetString.length(); i++){
+    int temp;
+    temp = alphabetString.length();
+    int alphabetSize = temp;
+  for (int i = 0; i < temp; i++){
   alphabetArray[i]=alphabetString[i];
   }
-  int alphabetSize = alphabetString.length();
+
   string userInputs[alphabetSize];
   int turnNumber = 0;
   int healthPoints = 99;
@@ -35,21 +38,21 @@ int main() {
       turnNumber++;
           cout << "NEXT" << "\n";
   // block of code to be executed if user enters a blank inpur or lack of input
-  //adds turn, but does not damage player if no wrong inout is entered 
+  //adds turn, but does not damage player if no wrong inout is entered
 } else if (userInputs[j]==alphabetArray[0]) {
     //break;
     cout << alphabetArray[0]<< "!!!!" << "\n";
-    //test condiontion 
+    //test condiontion
     
     
   // block of code to be executed if the condition is the values are true / fit answer
-      //hangman style word game logic 
+      //hangman style word game logic
         //adds turn
         turnNumber++;
         break;
 } else {
     //break;
-  // block of code to be executed if the ccondition is the values are NOT true 
+  // block of code to be executed if the ccondition is the values are NOT true
       //damage palyer
        //adds turn
        turnNumber++;
@@ -61,7 +64,7 @@ int main() {
    }
   //break;
   
-  turnNumber++;
+  //turnNumber++;
   healthPoints -= 9;
   }while (healthPoints>0);
   cout <<  "\n";cout <<  "\n"; cout <<  "\n";
